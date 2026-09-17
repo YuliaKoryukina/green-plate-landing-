@@ -180,6 +180,29 @@ header {
 }
 
 /* Hero */
+.hero {
+  width: 100%;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  object-fit: cover;
+  border-radius: 40px;
+}
 
 .first {
   padding: 56px 0 72px;
