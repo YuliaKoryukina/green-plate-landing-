@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPlate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="home">
+        <div class="header_inner">
+            <div class="left_header">
+                <button class="sigin" type="button">Sign In</button>
+                <div class="cart">
+                    <button class="cart_button" type="button" aria-label="Shopping cart">
+                        <img src="img/Shopping bag.svg" alt="" class="cart_icon">
+                        <span class="cart_count">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="logo_center">
+                <a href="#home" aria-label="GreenPlate home">
+                    <img class="logo" src="img/logo.svg" alt="GreenPlate">
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#delivery">Delivery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="first">
+        <div class="container first_container">
+            <div class="left_content">
+                <div class="left_first">
+                    <h1 class="new_food">Salmon</h1>
+                    <p class="new_food1">Bowl</p>
+                </div>
+                <div class="left_down">
+                    <h2 class="text_special">Special on this week</h2>
+                    <p class="special_about">
+                        Fresh salmon fillet, steamed rice, avocado slices, cucumber,
+                        edamame beans, pickled radish, seaweed (nori) strips,
+                        soy sauce, sesame seeds
+                    </p>
+                </div>
+                <a class="button_menu" href="#menu">View our menu</a>
+            </div>
+            <div class="right">
+                <div class="special_pic">
+                    <img class="Special_img" src="img/salmon.svg" alt="Salmon bowl">
+                    <div class="calories-info">420 kcal</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our_menu" id="menu">
+        <div class="container">
+            <h2 class="section_title">OUR MENU</h2>
+            <p class="section_subtitle light">Healthy, fresh, and fully transparent —<br>hover for calories.</p>
+            <div class="menu">
+                <article class="menu_card">
+                    <div class="menu_visual">
+                        <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
+                        <div class="price-tag">
+                            <img src="img/price.svg" alt="" class="price-tag-bg">
+                            <p class="price">$20.00</p>
+                        </div>
+                        <div class="calories-overlay">
+                            <span class="calories-text">340 kcal</span>
+                        </div>
+                    </div>
+                    <div class="menu_h1">
+                        <h3 class="menu_text-h1">Falafel bowl</h3>
+                        <p class="text_menu-p">
+                            Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage,
+                            carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
+                        </p>
+                        <button class="menu_button" type="button">Add to cart</button>
+                    </div>
+                </article>
+                <article class="menu_card">
+                    <div class="menu_visual">
+                        <img class="menu_pic" src="img/salmon.svg" alt="Salmon bowl">
+                        <div class="price-tag">
+                            <img src="img/price.svg" alt="" class="price-tag-bg">
+                            <p class="price">$30.00</p>
+                        </div>
+                        <div class="calories-overlay">
+                            <span class="calories-text">420 kcal</span>
+                        </div>
+                    </div>
+                    <div class="menu_h1">
+                        <h3 class="menu_text-h1">Salmon bowl</h3>
+                        <p class="text_menu-p">
+                            Fresh salmon fillet, steamed rice, avocado slices, cucumber,
+                            edamame beans, pickled radish, seaweed (nori) strips, arugula,
+                            soy sauce, sesame seeds
+                        </p>
+                        <button class="menu_button" type="button">Add to cart</button>
+                    </div>
+                </article>
+                <article class="menu_card">
+                    <div class="menu_visual">
+                        <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
+                        <div class="price-tag">
+                            <img src="img/price.svg" alt="" class="price-tag-bg">
+                            <p class="price">$20.00</p>
+                        </div>
+                        <div class="calories-overlay">
+                            <span class="calories-text">340 kcal</span>
+                        </div>
+                    </div>
+                    <div class="menu_h1">
+                        <h3 class="menu_text-h1">Falafel bowl</h3>
+                        <p class="text_menu-p">
+                            Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage,
+                            carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
+                        </p>
+                        <button class="menu_button" type="button">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_delivery" id="delivery">
+        <div class="container">
+            <h2 class="section_title">DELIVERY</h2>
+            <p class="section_subtitle">Fresh meals delivered quickly and right<br>to your door.</p>
+            <div class="flex_delivery">
+                <div class="text_about-delivery">
+                    <p class="delivery_time">Delivery time</p>
+                    <p class="answer_delivery">35–50 minutes</p>
+                    <p class="delivery_time">Free Delivery</p>
+                    <p class="answer_delivery">from $24</p>
+                </div>
+                <div class="plate_delivery">
+                    <img class="plate" src="img/food_delivery-finish.svg" alt="GreenPlate delivery meal">
+                </div>
+            </div>
+            <div class="button_delivery">
+                <button class="delivery_btn" type="button">Order now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="review" id="reviews">
+        <div class="container">
+            <h2 class="section_title">REVIEWS</h2>
+            <p class="section_subtitle light">What our happy customers say about GreenPlate</p>
+            <div class="reviews_container">
+                <article class="review_card">
+                    <div class="review_image-wrapper">
+                        <img src="img/man.jpg" alt="David Chen" class="review_image">
+                    </div>
+                    <blockquote class="review_quote">
+                        “The calorie count helps me stay on track without sacrificing flavor”
+                    </blockquote>
+                    <p class="review_author">— David Chen</p>
+                </article>
+                <article class="review_card">
+                    <div class="review_image-wrapper">
+                        <img src="img/women.png" alt="Emily Brooks" class="review_image">
+                    </div>
+                    <blockquote class="review_quote">
+                        “I love how healthy and colorful every dish looks — and tastes amazing!”
+                    </blockquote>
+                    <p class="review_author">— Emily Brooks</p>
+                </article>
+                <article class="review_card">
+                    <div class="review_image-wrapper">
+                        <img src="img/young-man.png" alt="Michael Turner" class="review_image">
+                    </div>
+                    <blockquote class="review_quote">
+                        “Fresh, tasty, and perfectly balanced. My go-to lunch spot now!”
+                    </blockquote>
+                    <p class="review_author">— Michael Turner</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer_content">
+            <p class="footer_copyright">© 2026 GreenPlate. All rights reserved.</p>
+            <p class="footer_design">Design by Yulia Koryukina</p>
+        </div>
+    </footer>
+</body>
+</html>
