@@ -63,7 +63,10 @@ body.dark {
 body.dark .sigin {
   border-color: #faf8e9;
 }
-body.dark .theme-icon {
+body.dark .theme-icon  {
+  filter: invert(1);
+}
+body.dark .cart_icon {
   filter: invert(1);
 }
 img {
