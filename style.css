@@ -50,6 +50,22 @@ body {
   overflow-x: hidden;
 }
 
+body.dark {
+  --cream: #1c1c1c;
+  --green: #3d583b;
+  --green-hover: #d8ead6;
+  --green-soft: #2d4a38;
+  --mint: #1c1c1c;
+  --mint-text: #c5ddc3;
+  --ink: #faf8e9;
+  --ink-soft: rgba(250, 248, 233, 0.8);
+}
+body.dark .sigin {
+  border-color: #faf8e9;
+}
+body.dark .theme-icon {
+  filter: invert(1);
+}
 img {
   max-width: 100%;
   display: block;
@@ -232,7 +248,7 @@ header {
   font-family: var(--font-body);
   font-size: clamp(0.875rem, 1.4vw, 1rem);
   font-weight: 400;
-  color: var(--ink-soft);
+  color:  rgba(51, 51, 51, 0.78);
   line-height: 1.6;
 }
 
