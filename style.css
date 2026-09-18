@@ -395,6 +395,7 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   line-height: 1.1;
+  text-transform: uppercase;
 }
 
 .section_subtitle {
@@ -560,10 +561,10 @@ header {
 
 .flex_delivery {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
   align-items: center;
   gap: 40px;
-  max-width: 920px;
+  max-width: var(--container);
   margin: 0 auto;
 }
 
@@ -598,10 +599,12 @@ header {
 .plate_delivery {
   display: flex;
   justify-content: center;
+  width: min(100%, 500px);
+  margin-inline: auto;
 }
 
 .plate {
-  width: min(100%, 420px);
+  width: 100%;
   height: auto;
 }
 
@@ -787,8 +790,8 @@ header {
     margin-inline: auto;
   }
 
-  .plate {
-    width: min(100%, 340px);
+  .plate_delivery {
+    width: min(100%, 380px);
   }
 }
 
