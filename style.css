@@ -60,15 +60,19 @@ body.dark {
   --ink: #faf8e9;
   --ink-soft: rgba(250, 248, 233, 0.8);
 }
+
 body.dark .sigin {
   border-color: #faf8e9;
 }
-body.dark .theme-icon  {
+
+body.dark .theme-icon {
   filter: invert(1);
 }
+
 body.dark .cart_icon {
   filter: invert(1);
 }
+
 img {
   max-width: 100%;
   display: block;
@@ -251,7 +255,7 @@ header {
   font-family: var(--font-body);
   font-size: clamp(0.875rem, 1.4vw, 1rem);
   font-weight: 400;
-  color:  rgba(51, 51, 51, 0.78);
+  color: rgba(51, 51, 51, 0.78);
   line-height: 1.6;
 }
 
@@ -440,6 +444,42 @@ header {
 .our_menu {
   background-color: var(--green-soft);
   padding: 72px 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pagination .menu {
+  flex: 1;
+  min-width: 0;
+}
+
+.pagination_btn {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: default;
+  opacity: 0.4;
+}
+
+.pagination_btn:disabled {
+  pointer-events: none;
+}
+
+.pagination_icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.pagination_icon--left {
+  transform: rotate(180deg);
 }
 
 .menu {
@@ -761,6 +801,22 @@ header {
 
   .first {
     padding: 36px 0 56px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pagination .menu {
+    flex: 1 1 100%;
+    order: -1;
+  }
+
+  .pagination_btn,
+  .pagination_icon {
+    width: 48px;
+    height: 48px;
   }
 
   .hero-container {
