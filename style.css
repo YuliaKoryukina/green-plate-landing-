@@ -81,7 +81,8 @@ body.dark .theme-icon {
   filter: invert(1);
 }
 
-body.dark .cart_icon {
+body.dark .cart_icon,
+body.dark .pagination_icon {
   filter: invert(1);
 }
 
@@ -575,12 +576,14 @@ header {
   padding: 0;
   border: none;
   background: none;
-  cursor: default;
+  cursor: pointer;
   opacity: 0.4;
+  transition: opacity 0.2s ease;
 }
 
-.pagination_btn:disabled {
-  pointer-events: none;
+.pagination_btn:hover,
+.pagination_btn:focus-visible {
+  opacity: 1;
 }
 
 .pagination_icon {
