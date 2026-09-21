@@ -134,6 +134,27 @@ header {
   justify-self: end;
 }
 
+.burger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 9px 7px;
+  border: none;
+  background: none;
+  cursor: default;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: end;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--ink);
+  border-radius: 2px;
+}
+
 .navigation ul {
   display: flex;
   list-style: none;
@@ -946,6 +967,23 @@ header {
 
   .plate_delivery {
     width: min(100%, 380px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px var(--space);
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
   }
 }
 
