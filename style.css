@@ -73,6 +73,34 @@ body.dark .cart_icon {
   filter: invert(1);
 }
 
+.theme-sun {
+  background-color: #1e4e2e;
+}
+
+.theme-sun .theme-icon {
+  filter: invert(1);
+}
+
+#moon {
+  opacity: 0.35;
+}
+
+body.dark .theme-moon {
+  background-color: #1e4e2e;
+}
+
+body.dark .theme-sun {
+  background-color: transparent;
+}
+
+body.dark #moon {
+  opacity: 1;
+}
+
+body.dark #sun {
+  opacity: 0.35;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -190,6 +218,15 @@ header {
   border: 1px solid #333333;
   border-radius: var(--radius);
   cursor: pointer;
+}
+
+.theme-moon,
+.theme-sun {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 
 .theme-icon {
