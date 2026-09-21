@@ -53,12 +53,24 @@ body {
 body.dark {
   --cream: #1c1c1c;
   --green: #3d583b;
-  --green-hover: #d8ead6;
-  --green-soft: #2d4a38;
-  --mint: #1c1c1c;
+  --green-hover: #5a7d56;
+  --green-soft: #243328;
+  --mint: #d8ead6;
   --mint-text: #c5ddc3;
   --ink: #faf8e9;
-  --ink-soft: rgba(250, 248, 233, 0.8);
+  --ink-soft: rgba(250, 248, 233, 0.78);
+}
+
+body.dark .section_title,
+body.dark .menu_text-h1,
+body.dark .new_food,
+body.dark .delivery_time {
+  color: var(--mint-text);
+}
+
+body.dark .section_subtitle.light,
+body.dark .review_author {
+  color: var(--ink);
 }
 
 body.dark .sigin {
