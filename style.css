@@ -319,6 +319,7 @@ header {
 }
 
 .hero-first-text {
+  margin: 0;
   font-family: var(--font-sans);
   font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 700;
@@ -500,6 +501,7 @@ header {
 /* Shared section titles */
 
 .section_title {
+  margin: 0;
   font-size: var(--text-section);
   font-weight: 700;
   color: var(--green);
@@ -687,6 +689,7 @@ header {
   letter-spacing: 0.04em;
   font-size: var(--text-xl);
   color: var(--green);
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -846,6 +849,8 @@ header {
 }
 
 .review_author {
+  margin: 0;
+  font-weight: 400;
   font-family: var(--font-script);
   color: var(--cream);
   font-size: var(--text-script);
