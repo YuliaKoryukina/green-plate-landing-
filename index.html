@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,44 +9,70 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header id="home">
+    <header>
         <div class="header_inner">
             <div class="left_header">
-                <button class="sigin" type="button">Sign In</button>
+                <button class="sigin" type="button" aria-label="Toggle theme">
+                    <span class="theme-moon">
+                        <img src="img/Moon.svg" alt="" id="moon" class="theme-icon">
+                    </span>
+                    <span class="theme-sun">
+                        <img src="img/Sun.svg" alt="" id="sun" class="theme-icon">
+                    </span>
+                </button>
                 <div class="cart">
                     <button class="cart_button" type="button" aria-label="Shopping cart">
-                        <img src="img/Shopping bag.svg" alt="" class="cart_icon">
+                        <img src="img/Shopping%20bag.svg" alt="" class="cart_icon">
                         <span class="cart_count">0</span>
                     </button>
                 </div>
             </div>
             <div class="logo_center">
-                <a href="#home" aria-label="GreenPlate home">
+                <a href="index.html" aria-label="GreenPlate home">
                     <img class="logo" src="img/logo.svg" alt="GreenPlate">
                 </a>
             </div>
             <nav class="navigation">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
                     <li><a href="#delivery">Delivery</a></li>
                     <li><a href="#reviews">Reviews</a></li>
                 </ul>
             </nav>
+            <button class="burger" type="button" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
-
+    <main>
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <img class="hero-img" src="img/hero-section.jpeg" alt="GreenPlate hero">
+            <div class="hero-text">
+                <h1 class="hero-first-text">Fuel Your Body with<br class="hero-br"> Real Food</h1>
+                <p class="hero-text-second">Discover our signature bowls, packed with crisp, farm-fresh vegetables and
+                    wholesome superfoods. We prepare every portion daily to bring you a perfect balance of crunch,
+                    flavor, and pure nourishment.</p>
+                <a class="button_menu" href="Menu.html">View our menu</a>
+            </div>
+        </div>
+    </section>
     <section class="first">
         <div class="container first_container">
             <div class="left_content">
                 <div class="left_first">
-                    <h1 class="new_food">Salmon</h1>
+                    <h2 class="new_food">Salmon</h2>
                     <p class="new_food1">Bowl</p>
                 </div>
                 <div class="left_down">
@@ -56,7 +83,7 @@
                         soy sauce, sesame seeds
                     </p>
                 </div>
-                <a class="button_menu" href="#menu">View our menu</a>
+                <a class="button_menu" href="Menu.html">More</a>
             </div>
             <div class="right">
                 <div class="special_pic">
@@ -69,70 +96,80 @@
 
     <section class="our_menu" id="menu">
         <div class="container">
-            <h2 class="section_title">OUR MENU</h2>
+            <h2 class="section_title">Most Loved</h2>
             <p class="section_subtitle light">Healthy, fresh, and fully transparent —<br>hover for calories.</p>
-            <div class="menu">
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$20.00</p>
+            <div class="pagination">
+                <button class="pagination_btn pagination_prev" type="button" aria-label="Previous">
+                    <img src="img/button-icon-dark.svg" alt="" class="pagination_icon pagination_icon--left">
+                </button>
+                <div class="menu">
+                    <article class="menu_card">
+                        <div class="menu_visual">
+                            <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
+                            <div class="price-tag">
+                                <img src="img/price.svg" alt="" class="price-tag-bg">
+                                <p class="price">$20.00</p>
+                            </div>
+                            <div class="calories-overlay">
+                                <span class="calories-text">340 kcal</span>
+                            </div>
                         </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">340 kcal</span>
+                        <div class="menu_h1">
+                            <h2 class="menu_text-h1">Falafel bowl</h2>
+                            <p class="text_menu-p">
+                                Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red
+                                cabbage,
+                                carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
+                            </p>
+                            <button class="menu_button" type="button">Details</button>
                         </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h3 class="menu_text-h1">Falafel bowl</h3>
-                        <p class="text_menu-p">
-                            Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage,
-                            carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
-                        </p>
-                        <button class="menu_button" type="button">Add to cart</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/salmon.svg" alt="Salmon bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$30.00</p>
+                    </article>
+                    <article class="menu_card">
+                        <div class="menu_visual">
+                            <img class="menu_pic" src="img/salmon.svg" alt="Salmon bowl">
+                            <div class="price-tag">
+                                <img src="img/price.svg" alt="" class="price-tag-bg">
+                                <p class="price">$30.00</p>
+                            </div>
+                            <div class="calories-overlay">
+                                <span class="calories-text">420 kcal</span>
+                            </div>
                         </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">420 kcal</span>
+                        <div class="menu_h1">
+                            <h2 class="menu_text-h1">Salmon bowl</h2>
+                            <p class="text_menu-p">
+                                Fresh salmon fillet, steamed rice, avocado slices, cucumber,
+                                edamame beans, pickled radish, seaweed (nori) strips, arugula,
+                                soy sauce, sesame seeds
+                            </p>
+                            <button class="menu_button" type="button">Details</button>
                         </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h3 class="menu_text-h1">Salmon bowl</h3>
-                        <p class="text_menu-p">
-                            Fresh salmon fillet, steamed rice, avocado slices, cucumber,
-                            edamame beans, pickled radish, seaweed (nori) strips, arugula,
-                            soy sauce, sesame seeds
-                        </p>
-                        <button class="menu_button" type="button">Add to cart</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$20.00</p>
+                    </article>
+                    <article class="menu_card">
+                        <div class="menu_visual">
+                            <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
+                            <div class="price-tag">
+                                <img src="img/price.svg" alt="" class="price-tag-bg">
+                                <p class="price">$20.00</p>
+                            </div>
+                            <div class="calories-overlay">
+                                <span class="calories-text">340 kcal</span>
+                            </div>
                         </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">340 kcal</span>
+                        <div class="menu_h1">
+                            <h2 class="menu_text-h1">Falafel bowl</h2>
+                            <p class="text_menu-p">
+                                Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red
+                                cabbage,
+                                carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
+                            </p>
+                            <button class="menu_button" type="button">Details</button>
                         </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h3 class="menu_text-h1">Falafel bowl</h3>
-                        <p class="text_menu-p">
-                            Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage,
-                            carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
-                        </p>
-                        <button class="menu_button" type="button">Add to cart</button>
-                    </div>
-                </article>
+                    </article>
+                </div>
+                <button class="pagination_btn pagination_next" type="button" aria-label="Next">
+                    <img src="img/button-icon-dark.svg" alt="" class="pagination_icon">
+                </button>
             </div>
         </div>
     </section>
@@ -170,7 +207,7 @@
                     <blockquote class="review_quote">
                         “The calorie count helps me stay on track without sacrificing flavor”
                     </blockquote>
-                    <p class="review_author">— David Chen</p>
+                    <h3 class="review_author">— David Chen</h3>
                 </article>
                 <article class="review_card">
                     <div class="review_image-wrapper">
@@ -179,7 +216,7 @@
                     <blockquote class="review_quote">
                         “I love how healthy and colorful every dish looks — and tastes amazing!”
                     </blockquote>
-                    <p class="review_author">— Emily Brooks</p>
+                    <h3 class="review_author">— Emily Brooks</h3>
                 </article>
                 <article class="review_card">
                     <div class="review_image-wrapper">
@@ -188,17 +225,46 @@
                     <blockquote class="review_quote">
                         “Fresh, tasty, and perfectly balanced. My go-to lunch spot now!”
                     </blockquote>
-                    <p class="review_author">— Michael Turner</p>
+                    <h3 class="review_author">— Michael Turner</h3>
                 </article>
             </div>
         </div>
     </section>
+    </main>
 
     <footer class="footer">
-        <div class="container footer_content">
+        <div class="container footer_inner">
+            <div class="footer_col">
+                <a class="footer_brand" href="index.html">GreenPlate</a>
+                <p class="footer_about">Healthy bowls made daily from farm-fresh vegetables and wholesome superfoods.
+                </p>
+            </div>
+            <div class="footer_col">
+                <h3 class="footer_heading">Contact</h3>
+                <a class="footer_link"
+                    href="https://www.google.com/maps/search/?api=1&query=12+Garden+Lane+Berlin+10115" target="_blank"
+                    rel="noopener noreferrer">12 Garden Lane, Berlin, 10115</a>
+                <a class="footer_link" href="tel:+49305551840">+49 30 555 1840</a>
+                <a class="footer_link" href="mailto:hello@greenplate.com">hello@greenplate.com</a>
+            </div>
+            <div class="footer_col">
+                <h3 class="footer_heading">Follow us</h3>
+                <a class="footer_link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="footer_link" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="footer_link" href="https://wa.me/49305551840" target="_blank">WhatsApp</a>
+            </div>
+            <div class="footer_col">
+                <h3 class="footer_heading">Hours</h3>
+                <p class="footer_text">Daily 11:00–21:00</p>
+                <p class="footer_text">Delivery 35–50 minutes</p>
+                <p class="footer_text">Free delivery from $24</p>
+            </div>
+        </div>
+        <div class="container footer_bottom">
             <p class="footer_copyright">© 2026 GreenPlate. All rights reserved.</p>
             <p class="footer_design">Design by Yulia Koryukina</p>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
