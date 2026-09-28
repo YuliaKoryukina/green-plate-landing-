@@ -198,11 +198,13 @@ header {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-body.menu-open {
+body.menu-open,
+body.modal-open {
   overflow: hidden;
 }
 
-html:has(body.menu-open) {
+html:has(body.menu-open),
+html:has(body.modal-open) {
   overflow: hidden;
 }
 
@@ -767,6 +769,84 @@ html:has(body.menu-open) {
 
 .menu_card:hover .calories-text {
   opacity: 1;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(51, 51, 51, 0.45);
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal_box {
+  position: relative;
+  width: min(100%, 440px);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 36px 28px 28px;
+  background: var(--cream);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.modal_close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: none;
+  color: var(--ink);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal_img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.modal_kcal {
+  color: var(--green);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.modal_title {
+  font-size: var(--text-xl);
+  color: var(--green);
+  margin-bottom: 12px;
+}
+
+.modal_text {
+  color: var(--ink-soft);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.modal_price {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--green);
+}
+
+body.dark .modal_title,
+body.dark .modal_kcal,
+body.dark .modal_price {
+  color: var(--mint-text);
 }
 
 /* Delivery */
