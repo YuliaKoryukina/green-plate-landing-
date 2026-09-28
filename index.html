@@ -104,7 +104,7 @@
                 </button>
                 <div class="menu">
                     <div class="menu_track">
-                    <article class="menu_card">
+                    <article class="menu_card" data-i="0">
                         <div class="menu_visual">
                             <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
                             <div class="price-tag">
@@ -125,7 +125,7 @@
                             <button class="menu_button" type="button">Details</button>
                         </div>
                     </article>
-                    <article class="menu_card">
+                    <article class="menu_card" data-i="1">
                         <div class="menu_visual">
                             <img class="menu_pic" src="img/salmon.svg" alt="Salmon bowl">
                             <div class="price-tag">
@@ -146,7 +146,7 @@
                             <button class="menu_button" type="button">Details</button>
                         </div>
                     </article>
-                    <article class="menu_card">
+                    <article class="menu_card" data-i="0">
                         <div class="menu_visual">
                             <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
                             <div class="price-tag">
@@ -267,6 +267,17 @@
             <p class="footer_design">Design by Yulia Koryukina</p>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal_box">
+            <button class="modal_close" type="button" aria-label="Close">×</button>
+            <img class="modal_img" alt="">
+            <p class="modal_kcal"></p>
+            <h2 class="modal_title"></h2>
+            <p class="modal_text"></p>
+            <p class="modal_price"></p>
+        </div>
+    </div>
+    <script src="data.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

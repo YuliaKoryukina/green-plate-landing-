@@ -564,7 +564,7 @@ html:has(body.modal-open) {
   font-weight: 700;
   font-size: 0.875rem;
   letter-spacing: 0.06em;
-  cursor: default;
+  cursor: pointer;
 }
 
 .menu_cat.is-active {
@@ -632,6 +632,33 @@ html:has(body.modal-open) {
   margin-top: 36px;
 }
 
+.pagination--menu.is-hidden {
+  display: none;
+}
+
+.pagination_nums {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination_num {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--green);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pagination_num.is-active {
+  background: var(--green);
+  color: var(--mint);
+}
+
 .menu {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -646,6 +673,7 @@ html:has(body.modal-open) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .menu_visual {
@@ -841,6 +869,10 @@ html:has(body.modal-open) {
   font-family: var(--font-script);
   font-size: 2rem;
   color: var(--green);
+}
+
+body.dark .modal {
+  background: rgba(0, 0, 0, 0.55);
 }
 
 body.dark .modal_title,
@@ -1300,6 +1332,19 @@ body.dark .modal_price {
 
   .menu_card {
     max-width: 300px;
+  }
+
+  .modal {
+    padding: 12px;
+  }
+
+  .modal_box {
+    padding: 32px 16px 20px;
+  }
+
+  .modal_img {
+    width: 140px;
+    height: 140px;
   }
 
   .footer_inner {
