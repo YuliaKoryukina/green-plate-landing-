@@ -38,7 +38,7 @@
                     <img class="logo" src="img/logo.svg" alt="GreenPlate">
                 </a>
             </div>
-            <nav class="navigation">
+            <nav class="navigation" id="site-nav">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
@@ -46,7 +46,7 @@
                     <li><a href="index.html#reviews">Reviews</a></li>
                 </ul>
             </nav>
-            <button class="burger" type="button" aria-label="Open menu">
+            <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -63,205 +63,12 @@
                 <button class="menu_cat" type="button">Seafood</button>
                 <button class="menu_cat" type="button">Meat</button>
             </div>
-            <div class="menu">
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$20.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">340 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Falafel bowl</h2>
-                        <p class="text_menu-p">
-                            Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage,
-                            carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/salmon.svg" alt="Salmon bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$30.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">420 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Salmon bowl</h2>
-                        <p class="text_menu-p">
-                            Fresh salmon fillet, steamed rice, avocado slices, cucumber,
-                            edamame beans, pickled radish, seaweed (nori) strips, arugula,
-                            soy sauce, sesame seeds
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/4.jpeg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$40.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">400 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Salmon bowl</h2>
-                        <p class="text_menu-p">
-                            Salmon, quinoa, asparagus, falafel, avocado, cucumber, cherry tomatoes, mixed greens, red cabbage, carrot ribbons, hummus, tahini dressing, sesame seeds, lemon wedge.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/3.jpeg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$19.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">300 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Tofu bowl</h2>
-                        <p class="text_menu-p">
-                            Glazed tofu cubes, roasted sweet potatoes and chickpeas, cabbage and cranberry slaw, asparagus spears, sliced radishes, red bell pepper strips, artichoke hearts
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/1.jpeg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$28.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">370 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Chicken bowl</h2>
-                        <p class="text_menu-p">
-                            Glazed chicken, quinoa, cucumber slices, shredded cabbage, carrots, seaweed salad, and green onions over white rice.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/2.jpeg" alt="Falafel bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$20.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">250 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Vegan bowl</h2>
-                        <p class="text_menu-p">
-                            Vegan bowl with roasted beets, creamy avocado, sugar snap peas, quinoa, and chickpeas.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/poke.jpeg" alt="Poke bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$32.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">390 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Poke bowl</h2>
-                        <p class="text_menu-p">
-                            Marinated tuna, sushi rice, mango, cucumber, nori, spring onion and spicy soy dressing.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/shrimp.jpeg" alt="Shrimp bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$34.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">410 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Shrimp bowl</h2>
-                        <p class="text_menu-p">
-                            Grilled shrimp, brown rice, avocado, corn, cherry tomatoes, lime and cilantro yogurt.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/beef.jpeg" alt="Beef bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$29.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">450 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Beef bowl</h2>
-                        <p class="text_menu-p">
-                            Sliced beef, jasmine rice, kimchi, cucumber, spinach, sesame oil and pickled ginger.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-                <article class="menu_card">
-                    <div class="menu_visual">
-                        <img class="menu_pic" src="img/avocado.jpeg" alt="Avocado bowl">
-                        <div class="price-tag">
-                            <img src="img/price.svg" alt="" class="price-tag-bg">
-                            <p class="price">$18.00</p>
-                        </div>
-                        <div class="calories-overlay">
-                            <span class="calories-text">280 kcal</span>
-                        </div>
-                    </div>
-                    <div class="menu_h1">
-                        <h2 class="menu_text-h1">Avocado bowl</h2>
-                        <p class="text_menu-p">
-                            Creamy avocado, quinoa, kale, pumpkin seeds, cherry tomatoes and olive oil.
-                        </p>
-                        <button class="menu_button" type="button">Details</button>
-                    </div>
-                </article>
-            </div>
-            <div class="pagination pagination--menu">
+            <div class="menu"></div>
+            <div class="pagination pagination--menu is-hidden">
                 <button class="pagination_btn pagination_prev" type="button" aria-label="Previous">
                     <img src="img/button-icon-dark.svg" alt="" class="pagination_icon pagination_icon--left">
                 </button>
+                <div class="pagination_nums"></div>
                 <button class="pagination_btn pagination_next" type="button" aria-label="Next">
                     <img src="img/button-icon-dark.svg" alt="" class="pagination_icon">
                 </button>
@@ -299,6 +106,23 @@
             <p class="footer_design">Design by Yulia Koryukina</p>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal_box">
+            <button class="modal_close" type="button" aria-label="Close">×</button>
+            <img class="modal_img" alt="">
+            <p class="modal_kcal"></p>
+            <h2 class="modal_title"></h2>
+            <p class="modal_text"></p>
+            <div class="modal_options">
+                <p class="modal_label">Size</p>
+                <div class="modal_choices modal_sizes"></div>
+                <p class="modal_label">Topping</p>
+                <div class="modal_choices modal_extras"></div>
+            </div>
+            <p class="modal_price"></p>
+        </div>
+    </div>
+    <script src="data.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
