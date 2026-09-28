@@ -3,80 +3,150 @@ const menuData = [
     category: "Vegan",
     name: "Falafel bowl",
     img: "img/falavel.svg",
-    price: "$20.00",
-    kcal: "340 kcal",
-    text: "Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage, carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds"
+    text: "Falafel balls, quinoa, cherry tomatoes, cucumber slices, avocado, mixed greens, red cabbage, carrot ribbons, hummus, tahini dressing, lemon wedge, sesame seeds",
+    sizes: [
+      { name: "Regular", price: 20, kcal: 340 },
+      { name: "Large", price: 27, kcal: 450 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Seafood",
     name: "Salmon bowl",
     img: "img/salmon.svg",
-    price: "$30.00",
-    kcal: "420 kcal",
-    text: "Fresh salmon fillet, steamed rice, avocado slices, cucumber, edamame beans, pickled radish, seaweed (nori) strips, arugula, soy sauce, sesame seeds"
+    text: "Fresh salmon fillet, steamed rice, avocado slices, cucumber, edamame beans, pickled radish, seaweed (nori) strips, arugula, soy sauce, sesame seeds",
+    sizes: [
+      { name: "Regular", price: 30, kcal: 420 },
+      { name: "Large", price: 38, kcal: 540 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Seafood",
     name: "Salmon bowl",
     img: "img/4.jpeg",
-    price: "$40.00",
-    kcal: "400 kcal",
-    text: "Salmon, quinoa, asparagus, falafel, avocado, cucumber, cherry tomatoes, mixed greens, red cabbage, carrot ribbons, hummus, tahini dressing, sesame seeds, lemon wedge."
+    text: "Salmon, quinoa, asparagus, falafel, avocado, cucumber, cherry tomatoes, mixed greens, red cabbage, carrot ribbons, hummus, tahini dressing, sesame seeds, lemon wedge.",
+    sizes: [
+      { name: "Regular", price: 40, kcal: 400 },
+      { name: "Large", price: 49, kcal: 520 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Vegan",
     name: "Tofu bowl",
     img: "img/3.jpeg",
-    price: "$19.00",
-    kcal: "300 kcal",
-    text: "Glazed tofu cubes, roasted sweet potatoes and chickpeas, cabbage and cranberry slaw, asparagus spears, sliced radishes, red bell pepper strips, artichoke hearts"
+    text: "Glazed tofu cubes, roasted sweet potatoes and chickpeas, cabbage and cranberry slaw, asparagus spears, sliced radishes, red bell pepper strips, artichoke hearts",
+    sizes: [
+      { name: "Regular", price: 19, kcal: 300 },
+      { name: "Large", price: 26, kcal: 400 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Meat",
     name: "Chicken bowl",
     img: "img/1.jpeg",
-    price: "$28.00",
-    kcal: "370 kcal",
-    text: "Glazed chicken, quinoa, cucumber slices, shredded cabbage, carrots, seaweed salad, and green onions over white rice."
+    text: "Glazed chicken, quinoa, cucumber slices, shredded cabbage, carrots, seaweed salad, and green onions over white rice.",
+    sizes: [
+      { name: "Regular", price: 28, kcal: 370 },
+      { name: "Large", price: 36, kcal: 490 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Vegan",
     name: "Vegan bowl",
     img: "img/2.jpeg",
-    price: "$20.00",
-    kcal: "250 kcal",
-    text: "Vegan bowl with roasted beets, creamy avocado, sugar snap peas, quinoa, and chickpeas."
+    text: "Vegan bowl with roasted beets, creamy avocado, sugar snap peas, quinoa, and chickpeas.",
+    sizes: [
+      { name: "Regular", price: 20, kcal: 250 },
+      { name: "Large", price: 27, kcal: 340 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Seafood",
     name: "Poke bowl",
     img: "img/poke.jpeg",
-    price: "$32.00",
-    kcal: "390 kcal",
-    text: "Marinated tuna, sushi rice, mango, cucumber, nori, spring onion and spicy soy dressing."
+    text: "Marinated tuna, sushi rice, mango, cucumber, nori, spring onion and spicy soy dressing.",
+    sizes: [
+      { name: "Regular", price: 32, kcal: 390 },
+      { name: "Large", price: 41, kcal: 510 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Seafood",
     name: "Shrimp bowl",
     img: "img/shrimp.jpeg",
-    price: "$34.00",
-    kcal: "410 kcal",
-    text: "Grilled shrimp, brown rice, avocado, corn, cherry tomatoes, lime and cilantro yogurt."
+    text: "Grilled shrimp, brown rice, avocado, corn, cherry tomatoes, lime and cilantro yogurt.",
+    sizes: [
+      { name: "Regular", price: 34, kcal: 410 },
+      { name: "Large", price: 43, kcal: 530 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Meat",
     name: "Beef bowl",
     img: "img/beef.jpeg",
-    price: "$29.00",
-    kcal: "450 kcal",
-    text: "Sliced beef, jasmine rice, kimchi, cucumber, spinach, sesame oil and pickled ginger."
+    text: "Sliced beef, jasmine rice, kimchi, cucumber, spinach, sesame oil and pickled ginger.",
+    sizes: [
+      { name: "Regular", price: 29, kcal: 450 },
+      { name: "Large", price: 37, kcal: 580 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   },
   {
     category: "Vegan",
     name: "Avocado bowl",
     img: "img/avocado.jpeg",
-    price: "$18.00",
-    kcal: "280 kcal",
-    text: "Creamy avocado, quinoa, kale, pumpkin seeds, cherry tomatoes and olive oil."
+    text: "Creamy avocado, quinoa, kale, pumpkin seeds, cherry tomatoes and olive oil.",
+    sizes: [
+      { name: "Regular", price: 18, kcal: 280 },
+      { name: "Large", price: 24, kcal: 370 }
+    ],
+    extras: [
+      { name: "None", price: 0, kcal: 0 },
+      { name: "Avocado", price: 3, kcal: 80 },
+      { name: "Protein", price: 4, kcal: 90 }
+    ]
   }
 ];

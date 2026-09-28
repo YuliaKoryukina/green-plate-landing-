@@ -45,15 +45,46 @@ if (track) {
 }
 
 const modal = document.querySelector(".modal");
+let currentItem;
+let sizeI = 0;
+let extraI = 0;
+
+function updateModalInfo() {
+  if (!currentItem) return;
+  const size = currentItem.sizes[sizeI];
+  const extra = currentItem.extras[extraI];
+  document.querySelector(".modal_price").textContent =
+    "$" + (size.price + extra.price).toFixed(2);
+  document.querySelector(".modal_kcal").textContent =
+    size.kcal + extra.kcal + " kcal";
+  document.querySelectorAll(".modal_sizes .modal_choice").forEach(function (btn, i) {
+    btn.classList.toggle("is-active", i === sizeI);
+  });
+  document.querySelectorAll(".modal_extras .modal_choice").forEach(function (btn, i) {
+    btn.classList.toggle("is-active", i === extraI);
+  });
+}
 
 function openModal(item) {
   if (!modal || !item) return;
+  currentItem = item;
+  sizeI = 0;
+  extraI = 0;
   document.querySelector(".modal_img").src = item.img;
   document.querySelector(".modal_img").alt = item.name;
   document.querySelector(".modal_title").textContent = item.name;
   document.querySelector(".modal_text").textContent = item.text;
-  document.querySelector(".modal_price").textContent = item.price;
-  document.querySelector(".modal_kcal").textContent = item.kcal;
+  document.querySelector(".modal_sizes").innerHTML = item.sizes
+    .map(function (size) {
+      return '<button class="modal_choice" type="button">' + size.name + "</button>";
+    })
+    .join("");
+  document.querySelector(".modal_extras").innerHTML = item.extras
+    .map(function (extra) {
+      return '<button class="modal_choice" type="button">' + extra.name + "</button>";
+    })
+    .join("");
+  updateModalInfo();
   modal.classList.add("is-open");
   document.body.classList.add("modal-open");
 }
@@ -68,6 +99,18 @@ if (modal) {
   document.querySelector(".modal_close").onclick = closeModal;
   modal.onclick = function (e) {
     if (e.target === modal) closeModal();
+  };
+  document.querySelector(".modal_sizes").onclick = function (e) {
+    const btn = e.target.closest(".modal_choice");
+    if (!btn) return;
+    sizeI = [...btn.parentNode.children].indexOf(btn);
+    updateModalInfo();
+  };
+  document.querySelector(".modal_extras").onclick = function (e) {
+    const btn = e.target.closest(".modal_choice");
+    if (!btn) return;
+    extraI = [...btn.parentNode.children].indexOf(btn);
+    updateModalInfo();
   };
 }
 
@@ -97,9 +140,9 @@ if (typeof menuData !== "undefined" && menuBox && modal && document.querySelecto
           '<img class="menu_pic" src="' + item.img + '" alt="' + item.name + '">' +
           '<div class="price-tag">' +
             '<img src="img/price.svg" alt="" class="price-tag-bg">' +
-            '<p class="price">' + item.price + "</p>" +
+            '<p class="price">$' + item.sizes[0].price.toFixed(2) + "</p>" +
           "</div>" +
-          '<div class="calories-overlay"><span class="calories-text">' + item.kcal + "</span></div>" +
+          '<div class="calories-overlay"><span class="calories-text">' + item.sizes[0].kcal + " kcal</span></div>" +
         "</div>" +
         '<div class="menu_h1">' +
           '<h2 class="menu_text-h1">' + item.name + "</h2>" +
