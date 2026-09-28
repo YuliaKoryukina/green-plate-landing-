@@ -579,6 +579,23 @@ html:has(body.menu-open) {
 .pagination .menu {
   flex: 1;
   min-width: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.menu_track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.menu_track .menu_card {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.menu_track .menu_h1 {
+  max-width: 320px;
 }
 
 .pagination_btn {
@@ -589,13 +606,13 @@ html:has(body.menu-open) {
   border: none;
   background: none;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 1;
   transition: opacity 0.2s ease;
 }
 
 .pagination_btn:hover,
 .pagination_btn:focus-visible {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .pagination_icon {

@@ -22,3 +22,17 @@ document.onkeydown = function (e) {
 window.onresize = function () {
   if (window.innerWidth > 768) document.body.classList.remove("menu-open");
 };
+
+const track = document.querySelector(".menu_track");
+if (track) {
+  let i = 0;
+  const n = track.children.length;
+  document.querySelector(".pagination_prev").onclick = function () {
+    i = (i - 1 + n) % n;
+    track.style.transform = "translateX(" + (-i * 100) + "%)";
+  };
+  document.querySelector(".pagination_next").onclick = function () {
+    i = (i + 1) % n;
+    track.style.transform = "translateX(" + (-i * 100) + "%)";
+  };
+}
