@@ -40,7 +40,7 @@
                     <img class="logo" src="img/logo.svg" alt="GreenPlate">
                 </a>
             </div>
-            <nav class="navigation">
+            <nav class="navigation" id="site-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="Menu.html">Menu</a></li>
@@ -48,7 +48,7 @@
                     <li><a href="#reviews">Reviews</a></li>
                 </ul>
             </nav>
-            <button class="burger" type="button" aria-label="Open menu">
+            <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -103,7 +103,8 @@
                     <img src="img/button-icon-dark.svg" alt="" class="pagination_icon pagination_icon--left">
                 </button>
                 <div class="menu">
-                    <article class="menu_card">
+                    <div class="menu_track">
+                    <article class="menu_card" data-i="0">
                         <div class="menu_visual">
                             <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
                             <div class="price-tag">
@@ -124,7 +125,7 @@
                             <button class="menu_button" type="button">Details</button>
                         </div>
                     </article>
-                    <article class="menu_card">
+                    <article class="menu_card" data-i="1">
                         <div class="menu_visual">
                             <img class="menu_pic" src="img/salmon.svg" alt="Salmon bowl">
                             <div class="price-tag">
@@ -145,7 +146,7 @@
                             <button class="menu_button" type="button">Details</button>
                         </div>
                     </article>
-                    <article class="menu_card">
+                    <article class="menu_card" data-i="0">
                         <div class="menu_visual">
                             <img class="menu_pic" src="img/falavel.svg" alt="Falafel bowl">
                             <div class="price-tag">
@@ -166,6 +167,7 @@
                             <button class="menu_button" type="button">Details</button>
                         </div>
                     </article>
+                    </div>
                 </div>
                 <button class="pagination_btn pagination_next" type="button" aria-label="Next">
                     <img src="img/button-icon-dark.svg" alt="" class="pagination_icon">
@@ -265,6 +267,23 @@
             <p class="footer_design">Design by Yulia Koryukina</p>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal_box">
+            <button class="modal_close" type="button" aria-label="Close">×</button>
+            <img class="modal_img" alt="">
+            <p class="modal_kcal"></p>
+            <h2 class="modal_title"></h2>
+            <p class="modal_text"></p>
+            <div class="modal_options">
+                <p class="modal_label">Size</p>
+                <div class="modal_choices modal_sizes"></div>
+                <p class="modal_label">Topping</p>
+                <div class="modal_choices modal_extras"></div>
+            </div>
+            <p class="modal_price"></p>
+        </div>
+    </div>
+    <script src="data.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
